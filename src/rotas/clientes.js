@@ -10,7 +10,7 @@ const init = (expressInstance, basePath) => {
             plano: req.body.plano
         }
 
-        fs.writeFileSync('beneficarios.json', JSON.stringify(cliente, null, 2))
+        fs.writeFileSync('beneficiarios.json', JSON.stringify(cliente, null, 2))
     }),
 
     expressInstance.get(`${basePath}clientes`, (req, res) => {
